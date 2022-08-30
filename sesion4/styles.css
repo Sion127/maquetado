@@ -55,3 +55,12 @@ h1{
     position:absolute;
 }
 
+.p__z-idex--whitesmoke{
+    color: whitesmoke;
+    z-index: 3;
+}
+
+.button__z-index{
+    position: absolute;
+    z-index: 5;
+}
