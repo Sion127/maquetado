@@ -15,20 +15,43 @@ h1{
 
 .div__static--yellow{
     background-color: yellow;
+    /* Pocisión estático, no se moverá de su lugar */
+    /* Por default tiene esta pocisión */
+    position: static;
 }
 
 .div__relative--hotpink{
     background-color: hotpink;
+    /* Pocisión relative, se moverá relativo a su pocisión original que es STATIC */
+    position:relative;
+
+    /* Propiedades para mover el elemento 
+    top: ;
+    left: ;
+    right: ;
+    bottom: ; */
 }
 
 .div__fixed--blue{
     background-color: blue;
+    /* Pocisión FIXED es parecido al STATIC, pero este se puede establecer su pocisión por las reglas TOP, LEFT, RIGHT, BOTTOM y simpre dependerá donde quieres el contenido fijo dentro del view port*/
+    position: fixed;
 }
 
 .div__absolute--red{
     background-color: red;
+    /* Pocisión ABSOLUTE se coloca en la misma pocisión  que su antecesor*/
+    position: absolute;
 }
 
 .div__sticky--purple{
     background-color: purple;
+    /* Pocisión STICKY se coloca en la misma pocisión, pero se mantiene visible incluso cuando movemos el SCROLL */
+    position: sticky;
 }
+
+.img__z-index{
+    z-index: -1;
+    position:absolute;
+}
+
