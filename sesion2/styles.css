@@ -1,0 +1,60 @@
+/* Manera 1 de dar estilos con CSS */
+table{
+
+    /* Aquí vamos a escriir las REGLAS CSS, es decir, aplicamos estilo a mi página web en CSS*/
+
+    border: 1px solid  blue;
+}
+
+th{
+    border: 1px solid blue;
+}
+
+td{
+    border: 1px solid blue;
+}
+
+div{
+    border: 1px solid blue;
+}
+
+/* Manera 2 usando ESPECIFICIDAD 
+
+    table, th, td{
+        border: 1px solid blue;
+    }
+
+*/
+
+/* Hago referencia al elemento con la clase "hi" para aplicar estilo, la referencia de la clase se usa "." un punto al inicio*/
+.hi{
+    /* Sin borde */
+    border: none ;
+
+    /* Texto de color */
+    color: purple;
+
+    /* Tamaño de letra */
+    font-size:2cm;
+}
+
+.Question{
+    border: 5px dotted darkblue;
+    color: brown;
+    font-size: 1rem;
+    /* Uso de fondo de pantalla */
+    background-color: coral;
+}
+
+/* Para hacer referencia a un "id" usa esímblo "#" */
+#container{
+    /* El atributo widht hacer edita el tamaño del ancho */
+    width: 90px;
+    /* El atributo height hace referencia al tamaño de lo alto */
+    height: 100px;
+    border: 5px solid darkblue;
+    background-color: blueviolet;
+}
+
+
+
