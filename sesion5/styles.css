@@ -79,3 +79,54 @@ body{
 .button__ease-out--yellow{
     width: 240px;
 }
+
+/* Establece cada que el view port esté a los "x" pixeles establece la regla */
+/* @media only screen and (max-width: 600px){
+    body{
+        background-color: aqua;
+    }
+} */
+
+/* @media only screen and (min-width: 600px){
+    body{
+        background-color: turquoise;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    body{
+        background-color: greenyellow;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    body{
+        background-color: hotpink;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    body{
+        background-color: blue;
+    }
+} */
+
+.div__card--border-black{
+    width: 180px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width:600px){
+    /* Se establece por una selección por clase */
+    .div__card--border-black{
+        display: none;
+    }
+}
+
+@media only screen and (min-widht: 768px){
+    .div__card--border-black{
+        background-color: hotpink;
+    }
+}
