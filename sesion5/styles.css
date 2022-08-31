@@ -1,0 +1,81 @@
+h1{
+    color: hotpink;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.button__frames--hotpink{
+    width: 144px;
+    height: 42px;
+    background-color: hotpink;
+    color: white;
+    margin: 20px;
+    border-radius: 18px;
+    cursor:pointer;
+    border: none;
+}
+
+/* Cada que pasa el cursor por ensima del boton */
+.button__frames--hotpink:hover{
+    animation-name: example;
+    animation-duration: 5s;
+}
+
+/* Esta parte controla la duración de la animación y la controla */
+@keyframes example {
+    0% {background-color: blue;}
+    25% {background-color: red;}
+    50% {background-color: yellow;}
+    75% {background-color: green;}
+    100% {background-color: purple;}
+
+}
+
+.div__2Dtrasnforms > .button{
+    margin: 30px;
+    border: none;
+    width: 180px;
+    border-radius: 15px 0px 15px 0px;
+    height: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+.button__linear--blue{
+    background-color: blue;
+    transition-timing-function: linear;
+}
+
+.button__linear--blue:hover{
+    width: 240px;
+}
+
+.button__ease-in--green{
+    background-color: green;
+    transition-timing-function: ease-in;
+}
+
+.button__ease-in--green:hover{
+    width: 240px;
+}
+
+.button__ease--hotpink{
+    background-color: hotpink;
+    transition-timing-function: ease;
+}
+
+.button__ease--hotpink:hover{
+    width: 240px;
+}
+
+.button__ease-out--yellow{
+    background-color: yellow;
+    color:black;
+    transition-timing-function: ease-out;
+}
+
+.button__ease-out--yellow{
+    width: 240px;
+}
