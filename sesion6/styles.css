@@ -1,6 +1,123 @@
-.h1__titulo--hotpink{
-
-    color: hotpink;
+body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
 }
+
+.h1__titulo--hotpink{
+    color: hotpink;
+}
+
+/* Desaparece el texto */
+.span__display--none{
+    display: none;
+}
+
+.span__display-in-line--red{
+    display: inline;
+    color: red;
+    padding: 20px;
+}
+
+.span__display-in-line-block--red{
+    display: inline-block;
+    color: red;
+    padding: 20px;
+}
+
+.span__block--red{
+    display: block;
+    color: red;
+    padding: 20px;
+}
+
+
+.div__container{
+
+    /* Los elementos se organisan en la misma línea: DISPLAY: FLEX, su nauraleza por defecto los elementos se organizan en ROW*/
+    display: flex;
+
+    /* Los elementos se organisan en una colomna: FLEX DIRECTION: COLUMN, con esta propiedad estamos orientando de arriba para abajo*/
+    flex-direction: column;
+
+    /* Los elementos se organisan en una colomna de atras a delante: FLEX DIRECTION: COLUMN-REVERSE, con esta propiedad estamos orientando del último elemento al primer elemento en COLUMNA*/
+    flex-direction: column-reverse;
+
+    /* Los elementos se organisan en una colomna de atras a delante: FLEX DIRECTION: ROW-REVERSE, con esta propiedad estamos orientando del último elemento al primer elemento en FILA*/
+}
+
+.div__flex-box{
+    width: 90px;
+    height: 90px;
+    margin: 15px;
+    border: 1px solid black;
+    background-color: hotpink;
+    color: whitesmoke;
+}
+
+.div__flex-wrap > .div{
+    width: 90px;
+    height: 90px;
+    border: 2px dotted hotpink;
+    background-color: yellowgreen;
+    margin: 10px;
+}
+
+.div__flex-wrap{
+    width: 800px;
+    /* Altura fija */
+    /* height: 400px; */
+    height: auto;
+
+    /* Altura ajustada automática */
+    border: 2px solid black;
+    background-color: gray;
+    display: flex;
+    /* El elemento va contener en su interior todos los elementos designados */
+    /* flex-wrap: wrap; */
+    /* flex-wrap: wrap-reverse; */
+    /* flex-wrap: nowrap; */
+}
+
+.div__flex-justify-content{
+    width: 800px;
+    height: auto;
+    margin: 20px;
+    border: 2px solid black;
+    background-color: gray;
+    display: flex;
+    /* Acomoda el contenido de manera centrada */
+    /* justify-content: center; */
+
+    /* Acomoda el contenido de manera a la derecha */
+    /* justify-content: end; */
+
+    /* Acomoda el contenido de manera a la izquierda */
+    /* justify-content: start; */
+
+    /* Crea un espacio entre el contenido */
+    /* justify-content: space-between; */
+
+    /* Crea un espacio al rededor del contenido */
+    /* justify-content: space-around; */
+
+    /* Crea un espacio al rededor del contenido */
+    /* justify-content: space-evenly; */
+
+    flex-wrap: wrap;
+    /* Alinea los elementos en el centro del elemento contenedor*/
+    /* align-items: center; */
+
+
+}
+
+.div__flex-box-jutify-content{
+    width: 90px;
+    height: 90;
+    border: 2px dotted hotpink;
+    background-color: blue;
+    display: flex; 
+}
+
+.div__flex-box-jutify-content--flex-basis{
+    flex-basis: 300px;
+}
+
